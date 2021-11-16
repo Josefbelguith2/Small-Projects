@@ -1,8 +1,8 @@
 <html>
     <head>
         <script src='https://unpkg.com/@metamask/legacy-web3@2.0.0/dist/metamask.web3.min.js'></script>
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src='assets/index.js'></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>      
+        <script src="/assets/index.js"></script>  
         <style>
         #feed {
             background-color: green;
@@ -11,13 +11,19 @@
         </style>
     </head>
 
-    <body>
+    <body style="font-family: 'Courier New', Courier, monospace;">
         <h1>WELCOME</h1>
+        <lable>Choose the token</lable>
+        <select id='pets' name='Pet'>
+
+        </select><br><br><br>
+        <button id="go">SELECT</button>
+
         <div id='row'>
             <div>PetId : <span id='Petid'>0</span></div>
             <div>Damage : <span id='damage'></span></div>
             <div>Magic : <span id='magic'></span></div>
-            <div>Endurance : <span id='enducrance'></span></div>
+            <div>Endurance : <span id='endurance'></span></div>
             <div>Time to starve : <span id='starvation'></span></div>
             <div><button id='feed'>Feed</button></div>
         </div>
